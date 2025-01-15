@@ -44,7 +44,6 @@ const List = ({token}) => {
     fetchList()
   }, [])
 
-
   return (
     <>
       <p className='mb-2'>All Products List</p>
