@@ -35,6 +35,9 @@ const Orders = ({ token }) => {
     fetchAllOrders()
   }, [token])
 
+  // useEffect(() => {
+  //   console.log(orders);
+  // }, [orders]);
 
   return (
     <div>
@@ -52,7 +55,7 @@ const Orders = ({ token }) => {
                 if(index === order.items.length -1){
                   return <p key={index}>{item.name} x {item.quantity} <span> {item.size} </span></p>
                 } else{
-                  <p key={index}>{item.name} x {item.quantity} <span> {item.size} </span> , </p>
+                  // return <p key={index}>{item.name} x {item.quantity} <span> {item.size} </span> , </p>
                 }
               })}
             </div>
